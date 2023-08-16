@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "terramon",
+  "version": "${version}",
+  "name": "Terramon",
+  "description": "open-source Pokémon mod for Fabric. but Animation base",
+  "authors": [
+    "Terramon-dev"
+  ],
+  "contact": {
+    "repo": "https://github.com/Terramon-dev/Terramon"
+  },
+  "license": "unlicense",
+  "icon": "assets/terramon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.cupelt.terramon.client.TerramonClient"
+    ],
+    "main": [
+      "com.cupelt.terramon.Terramon"
+    ]
+  },
+  "mixins": [
+    "terramon.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
